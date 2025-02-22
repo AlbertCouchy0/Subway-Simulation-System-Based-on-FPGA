@@ -1,0 +1,686 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Fri Sep 13 09:36:48 2024
+# Process ID: 18408
+# Current directory: Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.runs/synth_1
+# Command line: vivado.exe -log top_design.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_design.tcl
+# Log file: Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.runs/synth_1/top_design.vds
+# Journal file: Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.runs/synth_1\vivado.jou
+# Running On: SaverZY, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 24, Host memory: 68518 MB
+#-----------------------------------------------------------
+source top_design.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/utils_1/imports/synth_1/hx75_hex_7seg.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/utils_1/imports/synth_1/hx75_hex_7seg.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top_design -part xc7a75tfgg484-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a75t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a75t'
+INFO: [Device 21-403] Loading part xc7a75tfgg484-2
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 22340
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1336.359 ; gain = 440.617
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_design' [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/imports/sources_1/new/key_7seg.v:3]
+INFO: [Synth 8-6157] synthesizing module 'key44' [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/imports/sources_1/imports/IDES/key44_scan.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/imports/sources_1/imports/IDES/key44_scan.v:40]
+WARNING: [Synth 8-567] referenced signal 'key_flag' should be on the sensitivity list [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/imports/sources_1/imports/IDES/key44_scan.v:80]
+INFO: [Synth 8-155] case statement is not full and has no default [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/imports/sources_1/imports/IDES/key44_scan.v:93]
+WARNING: [Synth 8-567] referenced signal 'key_flag' should be on the sensitivity list [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/imports/sources_1/imports/IDES/key44_scan.v:89]
+INFO: [Synth 8-6155] done synthesizing module 'key44' (0#1) [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/imports/sources_1/imports/IDES/key44_scan.v:1]
+INFO: [Synth 8-6157] synthesizing module 'IO_deal' [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/IO_deal.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'IO_deal' (0#1) [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/IO_deal.v:25]
+WARNING: [Synth 8-7071] port 'ticket_num' of module 'IO_deal' is unconnected for instance 'U2' [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/imports/sources_1/new/key_7seg.v:62]
+WARNING: [Synth 8-7023] instance 'U2' of module 'IO_deal' has 15 connections declared, but only 14 given [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/imports/sources_1/new/key_7seg.v:62]
+INFO: [Synth 8-6157] synthesizing module 'seg_dtxs' [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/hx75_hex_7seg.v:2]
+WARNING: [Synth 8-6896] loop limit (65536) exceeded inside initial block, initial block items will be ignored [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/hx75_hex_7seg.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'seg_dtxs' (0#1) [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/hx75_hex_7seg.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Select' [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/Select.v:2]
+WARNING: [Synth 8-567] referenced signal 'start_station_value' should be on the sensitivity list [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/Select.v:13]
+WARNING: [Synth 8-567] referenced signal 'end_station_value' should be on the sensitivity list [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/Select.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'Select' (0#1) [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/Select.v:2]
+INFO: [Synth 8-6157] synthesizing module 'switch' [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/switch.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'switch' (0#1) [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/switch.v:21]
+INFO: [Synth 8-6157] synthesizing module 'num2seg' [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/State_one.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'num2seg' (0#1) [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/State_one.v:23]
+INFO: [Synth 8-6157] synthesizing module 'button' [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/get_ticket_num.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'button' (0#1) [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/get_ticket_num.v:21]
+INFO: [Synth 8-6157] synthesizing module 'Bill' [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/Bill.v:23]
+WARNING: [Synth 8-567] referenced signal 'signal' should be on the sensitivity list [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/Bill.v:43]
+INFO: [Synth 8-226] default block is never used [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/Bill.v:55]
+INFO: [Synth 8-226] default block is never used [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/Bill.v:67]
+INFO: [Synth 8-6155] done synthesizing module 'Bill' (0#1) [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/Bill.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top_design' (0#1) [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/imports/sources_1/new/key_7seg.v:3]
+WARNING: [Synth 8-7137] Register key_flag_reg in module key44 has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/imports/sources_1/imports/IDES/key44_scan.v:19]
+WARNING: [Synth 8-7137] Register col_reg_reg in module key44 has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/imports/sources_1/imports/IDES/key44_scan.v:69]
+WARNING: [Synth 8-7137] Register row_reg_reg in module key44 has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/imports/sources_1/imports/IDES/key44_scan.v:70]
+WARNING: [Synth 8-6014] Unused sequential element flag_reg was removed.  [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/IO_deal.v:75]
+WARNING: [Synth 8-6014] Unused sequential element top_state_reg was removed.  [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/switch.v:42]
+WARNING: [Synth 8-6014] Unused sequential element ten_unit_reg was removed.  [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/State_one.v:92]
+WARNING: [Synth 8-6014] Unused sequential element one_unit_reg was removed.  [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/State_one.v:93]
+WARNING: [Synth 8-6014] Unused sequential element total_reg was removed.  [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/State_one.v:95]
+WARNING: [Synth 8-6014] Unused sequential element ten_unit_2_reg was removed.  [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/State_one.v:96]
+WARNING: [Synth 8-6014] Unused sequential element one_unit_2_reg was removed.  [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/State_one.v:97]
+WARNING: [Synth 8-6014] Unused sequential element pay_auto_value_reg was removed.  [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/State_one.v:99]
+WARNING: [Synth 8-6014] Unused sequential element ten_unit_3_reg was removed.  [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/State_one.v:100]
+WARNING: [Synth 8-6014] Unused sequential element one_unit_3_reg was removed.  [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/State_one.v:101]
+WARNING: [Synth 8-6014] Unused sequential element total_hand_value_reg was removed.  [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/State_one.v:103]
+WARNING: [Synth 8-6014] Unused sequential element total_hand_temp_reg was removed.  [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/State_one.v:104]
+WARNING: [Synth 8-6014] Unused sequential element one_unit_5_reg was removed.  [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/State_one.v:105]
+WARNING: [Synth 8-6014] Unused sequential element ten_unit_5_reg was removed.  [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/State_one.v:107]
+WARNING: [Synth 8-6014] Unused sequential element hun_unit_5_reg was removed.  [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/State_one.v:109]
+WARNING: [Synth 8-6014] Unused sequential element thou_unit_5_reg was removed.  [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/State_one.v:111]
+WARNING: [Synth 8-6014] Unused sequential element pay_hand_value_reg was removed.  [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/State_one.v:113]
+WARNING: [Synth 8-6014] Unused sequential element pay_hand_temp_reg was removed.  [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/State_one.v:114]
+WARNING: [Synth 8-6014] Unused sequential element one_unit_6_reg was removed.  [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/State_one.v:115]
+WARNING: [Synth 8-6014] Unused sequential element ten_unit_6_reg was removed.  [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/State_one.v:117]
+WARNING: [Synth 8-6014] Unused sequential element hun_unit_6_reg was removed.  [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/State_one.v:119]
+WARNING: [Synth 8-6014] Unused sequential element thou_unit_6_reg was removed.  [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/State_one.v:121]
+WARNING: [Synth 8-6014] Unused sequential element recharge_auto_value_reg was removed.  [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/State_one.v:220]
+WARNING: [Synth 8-6014] Unused sequential element ten_unit_4_reg was removed.  [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/State_one.v:221]
+WARNING: [Synth 8-6014] Unused sequential element one_unit_4_reg was removed.  [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/State_one.v:222]
+WARNING: [Synth 8-6014] Unused sequential element recharge_hand_value_reg was removed.  [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/State_one.v:385]
+WARNING: [Synth 8-6014] Unused sequential element recharge_hand_temp_reg was removed.  [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/State_one.v:386]
+WARNING: [Synth 8-6014] Unused sequential element one_unit_7_reg was removed.  [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/State_one.v:387]
+WARNING: [Synth 8-6014] Unused sequential element ten_unit_7_reg was removed.  [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/State_one.v:389]
+WARNING: [Synth 8-6014] Unused sequential element hun_unit_7_reg was removed.  [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/State_one.v:391]
+WARNING: [Synth 8-6014] Unused sequential element thou_unit_7_reg was removed.  [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/State_one.v:393]
+WARNING: [Synth 8-6014] Unused sequential element hand_bill_reg was removed.  [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/Bill.v:56]
+WARNING: [Synth 8-6014] Unused sequential element auto_bill_reg was removed.  [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/Bill.v:68]
+WARNING: [Synth 8-6014] Unused sequential element bill_state_reg was removed.  [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/Bill.v:50]
+WARNING: [Synth 8-3936] Found unconnected internal register 'bill_flag_reg' and it is trimmed from '2' to '1' bits. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/Bill.v:45]
+WARNING: [Synth 8-7129] Port clk in module Bill is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pay_auto_bill[13] in module num2seg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pay_auto_bill[12] in module num2seg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pay_auto_bill[11] in module num2seg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pay_auto_bill[10] in module num2seg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pay_auto_bill[9] in module num2seg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pay_auto_bill[8] in module num2seg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module Select is either unconnected or has no load
+WARNING: [Synth 8-7129] Port segdisp_state[3] in module seg_dtxs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port segdisp_state[2] in module seg_dtxs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port segdisp_state[1] in module seg_dtxs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port segdisp_state[0] in module seg_dtxs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module IO_deal is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst in module IO_deal is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ticket_num[3] in module IO_deal is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ticket_num[2] in module IO_deal is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ticket_num[1] in module IO_deal is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ticket_num[0] in module IO_deal is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P2IO[15] in module top_design is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P2IO[14] in module top_design is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P2IO[13] in module top_design is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P2IO[12] in module top_design is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P2IO[11] in module top_design is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P2IO[10] in module top_design is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P2IO[9] in module top_design is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 2296.469 ; gain = 1400.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 2296.469 ; gain = 1400.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 2296.469 ; gain = 1400.727
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.267 . Memory (MB): peak = 2296.469 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc]
+WARNING: [Vivado 12-584] No ports matched 'beep'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sd_miso_DAT0'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sd_mosi_CMD'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sd_clk'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sd_cs_DAT3'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sd_DAT1'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sd_DAT2'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'uart_RXD'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'uart_TXD'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vn_in'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_VSYNC'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_HSYNC'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_D[0]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:69]
+CRITICAL WARNING: [Common 17-161] Invalid option value '//VGA' specified for 'objects'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:69]
+WARNING: [Vivado 12-584] No ports matched 'VGA_D[1]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:70]
+CRITICAL WARNING: [Common 17-161] Invalid option value '//VGA' specified for 'objects'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'VGA_D[2]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:71]
+CRITICAL WARNING: [Common 17-161] Invalid option value '//VGA' specified for 'objects'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:71]
+WARNING: [Vivado 12-584] No ports matched 'VGA_HSYNC'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_VSYNC'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_D[2]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_D[1]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_D[0]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'tmds_data_p[0]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:81]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'tmds_data_p[1]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'tmds_data_p[2]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:83]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:83]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'tmds_data_p[2]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'tmds_data_p[1]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'tmds_data_p[0]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'tmds_clk_p'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'tmds_clk_p_A'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hpdin'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hpdin'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:91]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'tmds_data_n_A[1]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'tmds_data_n_A[2]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'tmds_data_n_A[2]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'tmds_data_n_A[1]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'tmds_data_n_A[0]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'tmds_clk_n_A'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:98]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:98]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'tmds_clk_n_A'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'tmds_data_p_A[0]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:102]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'tmds_data_p_A[1]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:103]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'tmds_data_p_A[2]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:104]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:104]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'tmds_data_p_A[2]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'tmds_data_p_A[1]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:106]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:106]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'tmds_data_p_A[0]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:107]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:107]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'tmds_clk_p_A'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:108]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'tmds_clk_p_A'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:109]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:109]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hpdin'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:110]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:110]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hpdin'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:111]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:111]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'tmds_data_n_A[1]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:113]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:113]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'tmds_data_n_A[2]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:114]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:114]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'tmds_data_n_A[2]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:115]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:115]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'tmds_data_n_A[1]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:116]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:116]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'tmds_data_n_A[0]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:117]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:117]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'tmds_clk_n_A'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:118]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:118]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'tmds_clk_n_A'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:119]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:119]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cam_pclk'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:122]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports cam_pclk]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:122]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-507] No nets matched 'cam_pclk_IBUF'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:123]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:123]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cam_pclk'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:124]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:124]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cam_rst_n'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:125]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:125]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cam_pwdn'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:126]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:126]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cam_data[0]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:127]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:127]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cam_data[1]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:128]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:128]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cam_data[2]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:129]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:129]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cam_data[3]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:130]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:130]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cam_data[4]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:131]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:131]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cam_data[5]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:132]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:132]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cam_data[6]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:133]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:133]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cam_data[7]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:134]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:134]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cam_vsync'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:135]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:135]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cam_href'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:136]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:136]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cam_scl'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:137]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:137]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cam_sda'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:138]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:138]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'eth_rst_n'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:141]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:141]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'eth_rxc'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:142]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:142]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'eth_rx_ctl'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:143]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:143]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'eth_rxd[0]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:144]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:144]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'eth_rxd[1]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:145]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:145]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'eth_rxd[2]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:146]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:146]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'eth_rxd[3]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:147]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:147]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'eth_txc'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:149]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:149]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'eth_tx_ctl'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:150]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:150]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'eth_txd[0]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:152]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:152]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'eth_txd[1]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:153]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:153]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'eth_txd[2]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:154]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:154]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'eth_txd[3]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:155]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:155]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'P1IO[0]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:158]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:158]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'P1IO[1]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:159]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:159]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'P1IO[2]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:160]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:160]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'P1IO[3]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:161]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:161]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'P1IO[4]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:162]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:162]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'P1IO[5]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:163]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:163]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'P1IO[6]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:164]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:164]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'P1IO[7]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:165]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:165]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'P1IO[8]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:166]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:166]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'P1IO[9]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:167]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:167]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'P1IO[10]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:168]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:168]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'P1IO[11]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:169]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:169]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'P1IO[12]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:170]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:170]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'P1IO[13]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:171]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:171]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'P1IO[14]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:172]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:172]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'P1IO[15]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:173]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:173]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'P1IO[17]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:174]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:174]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:174]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:175]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:176]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:177]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'signal_IBUF[0]'. [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc:248]
+Finished Parsing XDC File [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_design_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_design_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2296.469 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 2296.469 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 2296.469 ; gain = 1400.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a75tfgg484-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 2296.469 ; gain = 1400.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 2296.469 ; gain = 1400.727
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'key44'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE3 |                           000001 |                              000
+                  iSTATE |                           000010 |                              001
+                 iSTATE0 |                           000100 |                              010
+                 iSTATE1 |                           001000 |                              011
+                 iSTATE2 |                           010000 |                              100
+                 iSTATE4 |                           100000 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'key44'
+WARNING: [Synth 8-327] inferring latch for variable 'key_value_reg' [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/imports/sources_1/imports/IDES/key44_scan.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'price_reg' [Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.srcs/sources_1/new/Select.v:16]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:36 ; elapsed = 00:00:50 . Memory (MB): peak = 2296.469 ; gain = 1400.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   17 Bit       Adders := 1     
+	   2 Input   14 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 2     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 3     
+	   3 Input    4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 8     
+	                8 Bit    Registers := 7     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 19    
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input   17 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 23    
+	   2 Input    8 Bit        Muxes := 13    
+	   4 Input    8 Bit        Muxes := 4     
+	   8 Input    8 Bit        Muxes := 1     
+	  11 Input    7 Bit        Muxes := 5     
+	   4 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 7     
+	   6 Input    6 Bit        Muxes := 1     
+	   6 Input    4 Bit        Muxes := 1     
+	  17 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 47    
+	  11 Input    3 Bit        Muxes := 1     
+	  11 Input    2 Bit        Muxes := 5     
+	   6 Input    1 Bit        Muxes := 5     
+	  17 Input    1 Bit        Muxes := 1     
+	  11 Input    1 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 4     
+	   8 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 180 (col length:80)
+BRAMs: 210 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port P2IO[15] in module top_design is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P2IO[14] in module top_design is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P2IO[13] in module top_design is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P2IO[12] in module top_design is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P2IO[11] in module top_design is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P2IO[10] in module top_design is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P2IO[9] in module top_design is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:58 ; elapsed = 00:01:23 . Memory (MB): peak = 2296.469 ; gain = 1400.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:00 ; elapsed = 00:01:26 . Memory (MB): peak = 2296.469 ; gain = 1400.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:01 ; elapsed = 00:01:27 . Memory (MB): peak = 2296.469 ; gain = 1400.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:04 ; elapsed = 00:01:32 . Memory (MB): peak = 2343.414 ; gain = 1447.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:06 ; elapsed = 00:01:34 . Memory (MB): peak = 2343.414 ; gain = 1447.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:06 ; elapsed = 00:01:34 . Memory (MB): peak = 2343.414 ; gain = 1447.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:06 ; elapsed = 00:01:35 . Memory (MB): peak = 2343.414 ; gain = 1447.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:06 ; elapsed = 00:01:35 . Memory (MB): peak = 2343.414 ; gain = 1447.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:06 ; elapsed = 00:01:35 . Memory (MB): peak = 2343.414 ; gain = 1447.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:06 ; elapsed = 00:01:35 . Memory (MB): peak = 2343.414 ; gain = 1447.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     3|
+|2     |CARRY4 |    59|
+|3     |LUT1   |    36|
+|4     |LUT2   |   689|
+|5     |LUT3   |   323|
+|6     |LUT4   |   559|
+|7     |LUT5   |   651|
+|8     |LUT6   |  3090|
+|9     |MUXF7  |    31|
+|10    |FDRE   |   456|
+|11    |FDSE   |    12|
+|12    |LD     |     4|
+|13    |LDC    |     4|
+|14    |IBUF   |    15|
+|15    |OBUF   |    25|
+|16    |OBUFT  |     7|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:06 ; elapsed = 00:01:35 . Memory (MB): peak = 2343.414 ; gain = 1447.672
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:52 ; elapsed = 00:01:32 . Memory (MB): peak = 2343.414 ; gain = 1447.672
+Synthesis Optimization Complete : Time (s): cpu = 00:01:07 ; elapsed = 00:01:35 . Memory (MB): peak = 2343.414 ; gain = 1447.672
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 2343.414 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 98 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'top_design' is not ideal for floorplanning, since the cellview 'IO_deal' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2343.414 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  LD => LDCE: 4 instances
+  LDC => LDCE: 4 instances
+
+Synth Design complete | Checksum: 7d294560
+INFO: [Common 17-83] Releasing license: Synthesis
+46 Infos, 184 Warnings, 104 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:08 ; elapsed = 00:01:39 . Memory (MB): peak = 2343.414 ; gain = 1856.184
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2343.414 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.runs/synth_1/top_design.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_design_utilization_synth.rpt -pb top_design_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 13 09:38:32 2024...

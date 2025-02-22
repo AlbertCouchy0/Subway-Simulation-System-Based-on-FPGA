@@ -1,0 +1,112 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Fri Sep 13 09:40:27 2024
+| Host         : SaverZY running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_design_control_sets_placed.rpt
+| Design       : top_design
+| Device       : xc7a75t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    34 |
+|    Minimum number of control sets                        |    34 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    92 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    34 |
+| >= 0 to < 4        |     5 |
+| >= 4 to < 6        |     4 |
+| >= 6 to < 8        |    11 |
+| >= 8 to < 10       |     4 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     3 |
+| >= 16              |     7 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             219 |           87 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             128 |           46 |
+| Yes          | No                    | No                     |             137 |           42 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------------+--------------------------------+--------------------------+------------------+----------------+--------------+
+|         Clock Signal         |          Enable Signal         |     Set/Reset Signal     | Slice Load Count | Bel Load Count | Bels / Slice |
++------------------------------+--------------------------------+--------------------------+------------------+----------------+--------------+
+|  U2/E[0]                     |                                | U2/AR[0]                 |                1 |              1 |         1.00 |
+|  U2/E[1]                     |                                | U2/AR[1]                 |                1 |              1 |         1.00 |
+|  U2/E[2]                     |                                | U2/AR[2]                 |                1 |              1 |         1.00 |
+|  U2/E[3]                     |                                | U2/AR[3]                 |                1 |              1 |         1.00 |
+|  U1/clk_500khz               |                                |                          |                1 |              1 |         1.00 |
+|  U1/key_value_reg[3]_i_2_n_0 |                                |                          |                1 |              4 |         4.00 |
+|  sys_clk_IBUF_BUFG           | U3/counter[16]_i_1_n_0         |                          |                1 |              4 |         4.00 |
+|  U7/clk                      |                                |                          |                1 |              4 |         4.00 |
+|  U7/flag_reg_n_0_[2]         | U7/neg_ticket_num[3]_i_1_n_0   |                          |                2 |              4 |         2.00 |
+|  sys_clk_IBUF_BUFG           |                                | U1/load                  |                2 |              6 |         3.00 |
+|  U1/clk_500khz               | U1/FSM_onehot_state[5]_i_1_n_0 |                          |                3 |              6 |         2.00 |
+| ~key_valid_BUFG              | U2/start_station[6]_i_1_n_0    |                          |                2 |              7 |         3.50 |
+| ~key_valid_BUFG              | U2/start_station[14]_i_1_n_0   |                          |                1 |              7 |         7.00 |
+| ~key_valid_BUFG              | U2/ticket_hand_show[6]_i_1_n_0 |                          |                2 |              7 |         3.50 |
+| ~key_valid_BUFG              | U2/ticket_hand_show1_out[14]   |                          |                5 |              7 |         1.40 |
+| ~key_valid_BUFG              | U2/end_station[14]_i_1_n_0     |                          |                3 |              7 |         2.33 |
+| ~key_valid_BUFG              | U2/end_station[6]_i_1_n_0      |                          |                2 |              7 |         3.50 |
+| ~key_valid_BUFG              | U2/price_hand_show[14]_i_1_n_0 |                          |                1 |              7 |         7.00 |
+| ~key_valid_BUFG              | U2/price_hand_show[6]_i_1_n_0  |                          |                1 |              7 |         7.00 |
+|  sys_clk_IBUF_BUFG           | U3/num_reg[3]                  |                          |                3 |              7 |         2.33 |
+|  signal_IBUF_BUFG[0]         | U5/sel                         |                          |                2 |              8 |         4.00 |
+|  U7/flag_reg_n_0_[3]         | U5/sel                         |                          |                2 |              8 |         4.00 |
+|  U1/clk_500khz               | U1/col[3]_i_1_n_0              |                          |                2 |              8 |         4.00 |
+|  U1/clk_500khz               | U1/key_flag                    |                          |                2 |              8 |         4.00 |
+|  signal_IBUF_BUFG[0]         | U5/led_reg[2]_2                |                          |                4 |             14 |         3.50 |
+|  sys_clk_IBUF_BUFG           |                                | U7/SR[0]                 |               10 |             14 |         1.40 |
+|  U7/flag_reg_n_0_[3]         | U5/led_reg[2]_2                |                          |                4 |             14 |         3.50 |
+|  sys_clk_IBUF_BUFG           |                                | U3/counter[16]_i_1_n_0   |                4 |             16 |         4.00 |
+|  sys_clk_IBUF_BUFG           |                                | U7/counter[1][0]_i_1_n_0 |                5 |             20 |         4.00 |
+|  sys_clk_IBUF_BUFG           |                                | U7/counter[2][0]_i_1_n_0 |                5 |             20 |         4.00 |
+|  sys_clk_IBUF_BUFG           |                                | U7/counter[3][0]_i_1_n_0 |                5 |             20 |         4.00 |
+|  sys_clk_IBUF_BUFG           |                                | U2/SR[0]                 |               11 |             28 |         2.55 |
+| ~key_valid_BUFG              |                                |                          |               33 |             87 |         2.64 |
+|  sys_clk_IBUF_BUFG           |                                |                          |               51 |            123 |         2.41 |
++------------------------------+--------------------------------+--------------------------+------------------+----------------+--------------+
+
+

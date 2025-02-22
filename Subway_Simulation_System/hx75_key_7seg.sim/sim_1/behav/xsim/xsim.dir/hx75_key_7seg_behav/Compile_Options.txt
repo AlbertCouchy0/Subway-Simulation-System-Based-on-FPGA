@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "hx75_key_7seg_behav" "xil_defaultlib.hx75_key_7seg" "xil_defaultlib.glbl" -log "elaborate.log" 

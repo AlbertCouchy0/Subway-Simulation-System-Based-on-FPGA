@@ -1,0 +1,8 @@
+0.7
+2020.2
+Oct 13 2023
+20:47:58
+Z:/FPGA/Railway_System/Railway_System/hx75_key_7seg.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
+Z:/FPGA/Railway_System/Railway_System/hx75_key_7seg.srcs/sources_1/imports/sources_1/imports/IDES/key44_scan.v,1725881371,verilog,,Z:/FPGA/Railway_System/Railway_System/hx75_key_7seg.srcs/sources_1/imports/sources_1/new/key_7seg.v,,key44,,,,,,,,
+Z:/FPGA/Railway_System/Railway_System/hx75_key_7seg.srcs/sources_1/imports/sources_1/new/key_7seg.v,1725884429,verilog,,,,hx75_key_7seg,,,,,,,,
+Z:/FPGA/Railway_System/Railway_System/hx75_key_7seg.srcs/sources_1/new/hx75_hex_7seg.v,1725886469,verilog,,Z:/FPGA/Railway_System/Railway_System/hx75_key_7seg.srcs/sources_1/imports/sources_1/imports/IDES/key44_scan.v,,Keyboard_conversion;seg_dtxs,,,,,,,,

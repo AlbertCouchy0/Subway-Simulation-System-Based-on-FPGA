@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Fri Sep 13 09:43:48 2024
+# Process ID: 4692
+# Current directory: Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.runs/impl_1
+# Command line: vivado.exe -log top_design.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_design.tcl -notrace
+# Log file: Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.runs/impl_1/top_design.vdi
+# Journal file: Z:/FPGA/Railway_System/Railway_System_V10/hx75_key_7seg.runs/impl_1\vivado.jou
+# Running On: SaverZY, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 24, Host memory: 68518 MB
+#-----------------------------------------------------------
+source top_design.tcl -notrace

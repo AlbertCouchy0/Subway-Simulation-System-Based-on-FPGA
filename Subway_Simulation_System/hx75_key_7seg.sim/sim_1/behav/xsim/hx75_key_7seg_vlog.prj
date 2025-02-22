@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../hx75_key_7seg.srcs/sources_1/new/hx75_hex_7seg.v" \
+"../../../../hx75_key_7seg.srcs/sources_1/imports/sources_1/imports/IDES/key44_scan.v" \
+"../../../../hx75_key_7seg.srcs/sources_1/imports/sources_1/new/key_7seg.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

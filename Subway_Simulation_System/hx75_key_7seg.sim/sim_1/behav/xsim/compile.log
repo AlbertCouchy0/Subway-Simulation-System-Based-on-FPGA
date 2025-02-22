@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "Z:/FPGA/Railway_System/Railway_System/hx75_key_7seg.srcs/sources_1/new/hx75_hex_7seg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg_dtxs
+INFO: [VRFC 10-311] analyzing module Keyboard_conversion
+INFO: [VRFC 10-2263] Analyzing Verilog file "Z:/FPGA/Railway_System/Railway_System/hx75_key_7seg.srcs/sources_1/imports/sources_1/imports/IDES/key44_scan.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key44
+INFO: [VRFC 10-2263] Analyzing Verilog file "Z:/FPGA/Railway_System/Railway_System/hx75_key_7seg.srcs/sources_1/imports/sources_1/new/key_7seg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hx75_key_7seg

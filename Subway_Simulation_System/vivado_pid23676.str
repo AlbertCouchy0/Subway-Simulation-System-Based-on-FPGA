@@ -1,0 +1,1005 @@
+/*
+
+AMD Vivado v2023.2 (64-bit) [Major: 2023, Minor: 2]
+SW Build: 4029153 on Fri Oct 13 20:14:34 MDT 2023
+IP Build: 4028589 on Sat Oct 14 00:45:43 MDT 2023
+IP Build: 4028589 on Sat Oct 14 00:45:43 MDT 2023
+
+Process ID (PID): 23676
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Tue Sep 10 16:49:54 CST 2024
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 11
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 32
+
+Screen size: 2560x1600
+Local screen bounds: x = 0, y = 0, width = 2560, height = 1528
+Screen resolution (DPI): 150
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=18
+Scale size: 27
+OS font scaling: 150%
+Anti-Alias Enabled: false
+
+Java version: 	17.0.7 64-bit
+JavaFX version: 17.0.1
+Java home: 	D:/F-FPGA/Vivado/2023.2/tps/win64/jre17.0.7_7
+Java executable: 	D:/F-FPGA/Vivado/2023.2/tps/win64/jre17.0.7_7/bin/java.exe
+Java arguments: 	[-Dfile.encoding=UTF-8, -Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.d3d=false, -Dsun.awt.nopixfmt=true, -Dsun.java2d.dpiaware=true, -Dsun.java2d.uiScale.enabled=false, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, -XX:+UseStringDeduplication, -XX:MaxGCPauseMillis=200, -XX:+ParallelRefProcEnabled, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, -XX:NewSize=80m, -XX:MaxNewSize=80m, -Xms512m, -Xmx4072m, -Xss10m]
+Java initial memory (-Xms): 	512 MB
+Java maximum memory (-Xmx):	 3 GB
+
+User name: 	29221
+User home directory: C:/Users/29221
+User working directory: Z:/FPGA/Railway_System/Railway_System_V2
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/F-FPGA/Vivado
+HDI_APPROOT: D:/F-FPGA/Vivado/2023.2
+RDI_DATADIR: D:/F-FPGA/Vivado/2023.2/data
+RDI_BINDIR: D:/F-FPGA/Vivado/2023.2/bin
+
+Vivado preferences file: C:/Users/29221/AppData/Roaming/Xilinx/Vivado/2023.2/vivado.xml
+Vivado preferences directory: C:/Users/29221/AppData/Roaming/Xilinx/Vivado/2023.2/
+Vivado layouts directory: C:/Users/29221/AppData/Roaming/Xilinx/Vivado/2023.2/data/layouts
+PlanAhead jar file: 	D:/F-FPGA/Vivado/2023.2/lib/classes/planAhead.jar
+Vivado log file: 	Z:/FPGA/Railway_System/Railway_System_V2/vivado.log
+Vivado journal file: 	Z:/FPGA/Railway_System/Railway_System_V2/vivado.jou
+Engine tmp dir: 	Z:/FPGA/Railway_System/Railway_System_V2/.Xil/Vivado-23676-SaverZY
+Non-Default Parameters:	[]
+
+Xilinx & AMD Environment Variables
+--------------------------------------------------------------------------------------------
+JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF-8
+RDI_APPROOT: D:/F-FPGA/Vivado/2023.2
+RDI_ARGS:  -gui_launcher_event rodinguilauncherevent8492 "Z:\FPGA\Railway_System\Railway_System_V2\hx75_key_7seg.xpr"
+RDI_ARGS_FUNCTION: RDI_EXEC_DEFAULT
+RDI_BASEROOT: D:/F-FPGA/Vivado
+RDI_BINDIR: D:/F-FPGA/Vivado/2023.2/bin
+RDI_BINROOT: D:/F-FPGA/Vivado/2023.2/bin
+RDI_BUILD: yes
+RDI_CHECK_PROG: True
+RDI_DATADIR: D:/F-FPGA/Vivado/2023.2/data
+RDI_INSTALLROOT: D:/F-FPGA
+RDI_INSTALLVER: 2023.2
+RDI_INSTALLVERSION: 2023.2
+RDI_ISE_PLATFORM: nt64
+RDI_JAVACEFROOT: D:/F-FPGA/Vivado/2023.2/tps/win64/java-cef-95.0.4638.69
+RDI_JAVAFXROOT: D:/F-FPGA/Vivado/2023.2/tps/win64/javafx-sdk-17.0.1
+RDI_JAVAROOT: D:/F-FPGA/Vivado/2023.2/tps/win64/jre17.0.7_7
+RDI_JAVA_VERSION: 17.0.7_7
+RDI_LIBDIR: D:/F-FPGA/Vivado/2023.2/lib/win64.o
+RDI_MINGW_LIB: D:/F-FPGA/Vivado/2023.2\tps\mingw\6.2.0\win64.o\nt\bin;D:/F-FPGA/Vivado/2023.2\tps\mingw\6.2.0\win64.o\nt\libexec\gcc\x86_64-w64-mingw32\6.2.0
+RDI_OPT_EXT: .o
+RDI_PLATFORM: win64
+RDI_PREPEND_PATH: D:/F-FPGA/Vivado/2023.2/ids_lite/ISE/bin/nt64;D:/F-FPGA/Vivado/2023.2/ids_lite/ISE/lib/nt64
+RDI_PROG: D:/F-FPGA/Vivado/2023.2/bin/unwrapped/win64.o/vivado.exe
+RDI_PROGNAME: vivado.exe
+RDI_PYTHON3: D:/F-FPGA/Vivado/2023.2\tps\win64\python-3.8.3
+RDI_PYTHON3_VERSION: 3.8.3
+RDI_PYTHONHOME: D:/F-FPGA/Vivado/2023.2\tps\win64\python-3.8.3
+RDI_PYTHONPATH: D:/F-FPGA/Vivado/2023.2\tps\win64\python-3.8.3;D:/F-FPGA/Vivado/2023.2\tps\win64\python-3.8.3\bin;D:/F-FPGA/Vivado/2023.2\tps\win64\python-3.8.3\lib;D:/F-FPGA/Vivado/2023.2\tps\win64\python-3.8.3\lib\site-packages
+RDI_PYTHON_LD_LIBPATH: D:/F-FPGA/Vivado/2023.2\tps\win64\python-3.8.3\lib
+RDI_SESSION_INFO: Z:\FPGA\Railway_System\Railway_System_V2:SAVERZY-2024-09-10周二_16-49-44.67
+RDI_SHARED_DATA: D:/F-FPGA/SharedData/2023.2/data
+RDI_TPS_ROOT: D:/F-FPGA/Vivado/2023.2/tps/win64
+RDI_USE_JDK17: True
+RDI_VERBOSE: False
+XILINX: D:/F-FPGA/Vivado/2023.2/ids_lite/ISE
+XILINX_DSP: D:/F-FPGA/Vivado/2023.2/ids_lite/ISE
+XILINX_FOR_ALTIUM_OVERRIDE:  
+XILINX_HLS: D:/F-FPGA/Vitis_HLS/2023.2
+XILINX_PLANAHEAD: D:/F-FPGA/Vivado/2023.2
+XILINX_VIVADO: D:/F-FPGA/Vivado/2023.2
+XILINX_VIVADO_HLS: D:/F-FPGA/Vivado/2023.2
+_RDI_BINROOT: D:\F-FPGA\Vivado\2023.2\bin
+_RDI_CWD: Z:\FPGA\Railway_System\Railway_System_V2
+
+
+GUI allocated memory:	512 MB
+GUI max memory:		4,072 MB
+Engine allocated memory: 1,025 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: Z:\FPGA\Railway_System\Railway_System_V2\hx75_key_7seg.xpr. Version: Vivado v2023.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project Z:/FPGA/Railway_System/Railway_System_V2/hx75_key_7seg.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 158 MB (+163302kb) [00:00:09]
+// [Engine Memory]: 1,108 MB (+1010715kb) [00:00:09]
+// [GUI Memory]: 168 MB (+1607kb) [00:00:10]
+// [Engine Memory]: 1,198 MB (+35404kb) [00:00:10]
+// WARNING: HEventQueue.dispatchEvent() is taking  2063 ms.
+// Tcl Message: open_project Z:/FPGA/Railway_System/Railway_System_V2/hx75_key_7seg.xpr 
+// Tcl Message: INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'Z:/FPGA/Railway_System/Railway_System_V2/hx75_key_7seg.gen/sources_1'. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/F-FPGA/Vivado/2023.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,199 MB. GUI used memory: 87 MB. Current time: 9/10/24, 4:49:57 PM CST
+// Tcl Message: open_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1578.895 ; gain = 396.023 
+// Project name: hx75_key_7seg; location: Z:/FPGA/Railway_System/Railway_System_V2; part: xc7a75tfgg484-2
+dismissDialog("Open Project"); // bq (Open Project Progress)
+// [Engine Memory]: 1,261 MB (+4128kb) [00:00:12]
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_design (key_7seg.v)]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_design (key_7seg.v)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_design (key_7seg.v)]", 1, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_design (key_7seg.v)]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_design (key_7seg.v), U6 : State_one (State_one.v)]", 7, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_design (key_7seg.v), U6 : State_one (State_one.v)]", 7, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_design (key_7seg.v), U6 : State_one (State_one.v)]", 7, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// Tcl (Dont Echo) Command: 'rdi::info_commands {device::*}'
+// Tcl (Dont Echo) Command: 'rdi::info_commands {debug::*}'
+// Tcl (Dont Echo) Command: 'rdi::info_commands {*}'
+// WARNING: HEventQueue.dispatchEvent() is taking  1033 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,372 MB. GUI used memory: 105 MB. Current time: 9/10/24, 4:50:20 PM CST
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, Simulation]", 1, false); // s (PAResourceQtoS.SettingsDialog_PROJECT_TREE, Project Tree)
+expandTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Text Editor]", 6); // s (PAResourceQtoS.SettingsDialog_OPTIONS_TREE, Options Tree)
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Text Editor, Fonts and Colors]", 10, false); // s (PAResourceQtoS.SettingsDialog_OPTIONS_TREE, Options Tree)
+// [Engine Memory]: 1,372 MB (+49859kb) [00:00:38]
+selectButton(RDIResource.BaseDialog_APPLY, "Apply"); // a (RDIResource.BaseDialog_APPLY)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Settings"); // d (dialog0)
+// [GUI Memory]: 178 MB (+2268kb) [00:00:42]
+// Elapsed time: 12 seconds
+selectCodeEditor("State_one.v", 59, 656); // ad (State_one.v)
+selectCodeEditor("State_one.v", 45, 687); // ad (State_one.v)
+selectCodeEditor("State_one.v", 131, 567); // ad (State_one.v)
+selectCodeEditor("State_one.v", 221, 574); // ad (State_one.v)
+selectCodeEditor("State_one.v", 316, 579); // ad (State_one.v)
+selectCodeEditor("State_one.v", 448, 554); // ad (State_one.v)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "key_7seg.v", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // t (PAResourceOtoP.PAViews_PROJECT_SUMMARY, PlanAheadTabProject Summary)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_design (key_7seg.v)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_design (key_7seg.v)]", 1, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+// [GUI Memory]: 200 MB (+13688kb) [00:01:13]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "State_one.v", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_design (key_7seg.v)]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+// Elapsed Time for: 'L.f': 01m:08s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_design (key_7seg.v), U2 : IO_deal (IO_deal.v)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_design (key_7seg.v), U2 : IO_deal (IO_deal.v)]", 3, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// Elapsed Time for: 'L.f': 01m:10s
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+selectButton(RDIResource.BaseDialog_APPLY, "Apply"); // a (RDIResource.BaseDialog_APPLY)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Settings"); // d (dialog0)
+// Elapsed time: 18 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "State_one.v", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("State_one.v", 100, 440); // ad (State_one.v)
+// Elapsed time: 28 seconds
+selectCodeEditor("State_one.v", 441, 274); // ad (State_one.v)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_design (key_7seg.v)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_design (key_7seg.v)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_design (key_7seg.v)]", 1, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_design (key_7seg.v)]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_design (key_7seg.v), U6 : State_one (State_one.v)]", 7, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_design (key_7seg.v), U5 : switch (switch.v)]", 6, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_design (key_7seg.v), U6 : State_one (State_one.v)]", 7, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_design (key_7seg.v), U5 : switch (switch.v)]", 6, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_design (key_7seg.v), U6 : State_one (State_one.v)]", 7, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_design (key_7seg.v), U5 : switch (switch.v)]", 6, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_design (key_7seg.v), U5 : switch (switch.v)]", 6, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_design (key_7seg.v), U5 : switch (switch.v)]", 6, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+selectButton(RDIResource.BaseDialog_APPLY, "Apply"); // a (RDIResource.BaseDialog_APPLY)
+// [GUI Memory]: 210 MB (+196kb) [00:02:53]
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Settings"); // d (dialog0)
+selectCodeEditor("switch.v", 109, 300); // ad (switch.v)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_design (key_7seg.v), U6 : State_one (State_one.v)]", 7, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_design (key_7seg.v), U6 : State_one (State_one.v)]", 7, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "State_one.v", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "switch.v", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "State_one.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// [GUI Memory]: 234 MB (+14147kb) [00:03:05]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "switch.v", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "State_one.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "switch.v", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("switch.v", 191, 358); // ad (switch.v)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "State_one.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("State_one.v", 80, 389); // ad (State_one.v)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "switch.v", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("switch.v", 209, 354); // ad (switch.v)
+typeControlKey((HResource) null, "switch.v", 'c'); // ad (switch.v)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "State_one.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+typeControlKey((HResource) null, "State_one.v", 'v'); // ad (State_one.v)
+selectCodeEditor("State_one.v", 73, 422); // ad (State_one.v)
+selectCodeEditor("State_one.v", 83, 423); // ad (State_one.v)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_design (key_7seg.v)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_design (key_7seg.v)]", 1, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectCodeEditor("key_7seg.v", 73, 108); // ad (key_7seg.v)
+selectCodeEditor("key_7seg.v", 194, 392); // ad (key_7seg.v)
+typeControlKey((HResource) null, "key_7seg.v", 'c'); // ad (key_7seg.v)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "State_one.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+typeControlKey((HResource) null, "State_one.v", 'v'); // ad (State_one.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 03m:44s
+// Elapsed Time for: 'L.f': 03m:46s
+selectCodeEditor("State_one.v", 112, 386); // ad (State_one.v)
+// Elapsed time: 17 seconds
+selectCodeEditor("State_one.v", 205, 394); // ad (State_one.v)
+selectCodeEditor("State_one.v", 203, 422); // ad (State_one.v)
+selectCodeEditor("State_one.v", 206, 420); // ad (State_one.v)
+selectCodeEditor("State_one.v", 199, 453); // ad (State_one.v)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("State_one.v", 173, 426); // ad (State_one.v)
+selectCodeEditor("State_one.v", 169, 386); // ad (State_one.v)
+typeControlKey((HResource) null, "State_one.v", 'c'); // ad (State_one.v)
+selectCodeEditor("State_one.v", 170, 210); // ad (State_one.v)
+typeControlKey(null, null, 'z');
+selectCodeEditor("State_one.v", 206, 296); // ad (State_one.v)
+typeControlKey((HResource) null, "State_one.v", 'c'); // ad (State_one.v)
+selectCodeEditor("State_one.v", 239, 586); // ad (State_one.v)
+selectCodeEditor("State_one.v", 211, 582); // ad (State_one.v)
+selectCodeEditor("State_one.v", 212, 614); // ad (State_one.v)
+selectCodeEditor("State_one.v", 207, 639); // ad (State_one.v)
+selectCodeEditor("State_one.v", 208, 671); // ad (State_one.v)
+selectCodeEditor("State_one.v", 215, 613); // ad (State_one.v)
+selectCodeEditor("State_one.v", 214, 640); // ad (State_one.v)
+selectCodeEditor("State_one.v", 209, 672); // ad (State_one.v)
+selectCodeEditor("State_one.v", 214, 705); // ad (State_one.v)
+selectCodeEditor("State_one.v", 206, 726); // ad (State_one.v)
+selectCodeEditor("State_one.v", 211, 763); // ad (State_one.v)
+selectCodeEditor("State_one.v", 130, 722); // ad (State_one.v)
+selectCodeEditor("State_one.v", 334, 546); // ad (State_one.v)
+selectCodeEditor("State_one.v", 308, 662); // ad (State_one.v)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("State_one.v", 223, 501); // ad (State_one.v)
+selectCodeEditor("State_one.v", 225, 549); // ad (State_one.v)
+typeControlKey((HResource) null, "State_one.v", 'c'); // ad (State_one.v)
+selectCodeEditor("State_one.v", 179, 82); // ad (State_one.v)
+typeControlKey((HResource) null, "State_one.v", 'v'); // ad (State_one.v)
+selectCodeEditor("State_one.v", 222, 575); // ad (State_one.v)
+typeControlKey((HResource) null, "State_one.v", 'c'); // ad (State_one.v)
+selectCodeEditor("State_one.v", 168, 105); // ad (State_one.v)
+selectCodeEditor("State_one.v", 168, 77); // ad (State_one.v)
+typeControlKey((HResource) null, "State_one.v", 'c'); // ad (State_one.v)
+selectCodeEditor("State_one.v", 172, 103); // ad (State_one.v)
+typeControlKey((HResource) null, "State_one.v", 'v'); // ad (State_one.v)
+typeControlKey((HResource) null, "State_one.v", 'v'); // ad (State_one.v)
+typeControlKey((HResource) null, "State_one.v", 'v'); // ad (State_one.v)
+typeControlKey((HResource) null, "State_one.v", 'v'); // ad (State_one.v)
+typeControlKey((HResource) null, "State_one.v", 'v'); // ad (State_one.v)
+typeControlKey((HResource) null, "State_one.v", 'v'); // ad (State_one.v)
+typeControlKey((HResource) null, "State_one.v", 'v'); // ad (State_one.v)
+typeControlKey((HResource) null, "State_one.v", 'v'); // ad (State_one.v)
+typeControlKey((HResource) null, "State_one.v", 'v'); // ad (State_one.v)
+selectCodeEditor("State_one.v", 276, 114); // ad (State_one.v)
+selectCodeEditor("State_one.v", 305, 372); // ad (State_one.v)
+selectCodeEditor("State_one.v", 257, 370); // ad (State_one.v)
+selectCodeEditor("State_one.v", 164, 366); // ad (State_one.v)
+selectCodeEditor("State_one.v", 150, 357); // ad (State_one.v)
+selectCodeEditor("State_one.v", 289, 372); // ad (State_one.v)
+selectCodeEditor("State_one.v", 269, 399); // ad (State_one.v)
+selectCodeEditor("State_one.v", 333, 524); // ad (State_one.v)
+selectCodeEditor("State_one.v", 326, 487); // ad (State_one.v)
+selectCodeEditor("State_one.v", 234, 491); // ad (State_one.v)
+selectCodeEditor("State_one.v", 314, 482); // ad (State_one.v)
+typeControlKey((HResource) null, "State_one.v", 'c'); // ad (State_one.v)
+selectCodeEditor("State_one.v", 379, 485); // ad (State_one.v)
+typeControlKey((HResource) null, "State_one.v", 'v'); // ad (State_one.v)
+selectCodeEditor("State_one.v", 232, 518); // ad (State_one.v)
+selectCodeEditor("State_one.v", 216, 515); // ad (State_one.v)
+selectCodeEditor("State_one.v", 534, 746); // ad (State_one.v)
+selectCodeEditor("State_one.v", 296, 758); // ad (State_one.v)
+// Elapsed time: 12 seconds
+selectCodeEditor("State_one.v", 298, 516); // ad (State_one.v)
+selectCodeEditor("State_one.v", 679, 511); // ad (State_one.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 06m:16s
+// Elapsed Time for: 'L.f': 06m:18s
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (PAResourceQtoS.SaveProjectUtils_SAVE)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // W.d (dialog1)
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file Z:/FPGA/Railway_System/Railway_System_V2/hx75_key_7seg.srcs/utils_1/imports/synth_1/hx75_hex_7seg.dcp with file Z:/FPGA/Railway_System/Railway_System_V2/hx75_key_7seg.runs/synth_1/top_design.dcp 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs synth_1 -jobs 16 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Sep 10 16:56:21 2024] Launched synth_1... Run output will be captured here: Z:/FPGA/Railway_System/Railway_System_V2/hx75_key_7seg.runs/synth_1/runme.log 
+// 'i' command handler elapsed time: 3 seconds
+// TclEventType: RUN_STATUS_CHANGE
+dismissDialog("Starting Design Runs"); // bq (Starting Design Runs Progress)
+// Elapsed Time for: 'L.f': 06m:26s
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed Time for: 'L.f': 06m:28s
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 81 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 18, false); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 16 
+// Tcl Message: [Tue Sep 10 16:57:42 2024] Launched impl_1... Run output will be captured here: Z:/FPGA/Railway_System/Railway_System_V2/hx75_key_7seg.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bq (Starting Design Runs Progress)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 20 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_design (key_7seg.v)]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_design (key_7seg.v), U3 : seg_dtxs (hx75_hex_7seg.v)]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_design (key_7seg.v), U3 : seg_dtxs (hx75_hex_7seg.v)]", 4, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+selectButton(RDIResource.BaseDialog_APPLY, "Apply"); // a (RDIResource.BaseDialog_APPLY)
+dismissDialog("Settings"); // d (dialog0)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// [GUI Memory]: 249 MB (+2623kb) [00:08:46]
+// Elapsed time: 22 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 21, false); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 16 
+// Tcl Message: [Tue Sep 10 16:58:36 2024] Launched impl_1... Run output will be captured here: Z:/FPGA/Railway_System/Railway_System_V2/hx75_key_7seg.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+selectCodeEditor("hx75_hex_7seg.v", 375, 709); // ad (hx75_hex_7seg.v)
+selectCodeEditor("hx75_hex_7seg.v", 755, 693); // ad (hx75_hex_7seg.v)
+selectCodeEditor("hx75_hex_7seg.v", 1043, 701); // ad (hx75_hex_7seg.v)
+// Elapsed time: 15 seconds
+selectCodeEditor("hx75_hex_7seg.v", 146, 173); // ad (hx75_hex_7seg.v)
+// Elapsed time: 10 seconds
+selectCodeEditor("hx75_hex_7seg.v", 318, 168); // ad (hx75_hex_7seg.v)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+selectCodeEditor("hx75_hex_7seg.v", 377, 164); // ad (hx75_hex_7seg.v)
+selectCodeEditor("hx75_hex_7seg.v", 674, 170); // ad (hx75_hex_7seg.v)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 22); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 22); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 23, false); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ao (PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, auto_connect_target_menu)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl (Dont Echo) Command: 'rdi::info_commands get_hw_probes'
+// Tcl (Dont Echo) Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw_manager 
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+dismissDialog("Open Hardware Manager"); // bq (Open Hardware Manager Progress)
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... INFO: [Labtools 27-2221] Launch Output: ECHO 处于关闭状态。 ECHO 处于关闭状态。  ****** Xilinx hw_server v2023.2   **** Build date : Oct 13 2023 at 21:31:40     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.   INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0 INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output: ECHO 处于关闭状态。 ECHO 处于关闭状态。   ******** Xilinx cs_server v2023.2.0   ****** Build date   : Oct 10 2023-12:01:56     **** Build number : 2023.2.1696910516       ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.       ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.    
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {Z:/FPGA/Railway_System/Railway_System_V2/hx75_key_7seg.runs/impl_1/top_design.bit} [get_hw_devices xc7a75t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a75t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a75t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a75t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bq (Auto Connect Progress)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 24, false); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a75t_0"); // ao (xc7a75t_0)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl (Dont Echo) Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (PAResourceOtoP.ProgramFpgaDialog_PROGRAM, RDIResource.BaseDialog_OK)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,397 MB. GUI used memory: 118 MB. Current time: 9/10/24, 4:59:35 PM CST
+dismissDialog("Program Device"); // aP (dialog2)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a75t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a75t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {Z:/FPGA/Railway_System/Railway_System_V2/hx75_key_7seg.runs/impl_1/top_design.bit} [get_hw_devices xc7a75t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a75t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a75t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'D' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bq (Program Device Progress)
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hx75_hex_7seg.v", 4); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("hx75_hex_7seg.v", 612, 61); // ad (hx75_hex_7seg.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 10m:02s
+// Elapsed Time for: 'L.f': 10m:04s
+// HMemoryUtils.trashcanNow. Engine heap size: 1,416 MB. GUI used memory: 115 MB. Current time: 9/10/24, 5:16:35 PM CST
+// Elapsed time: 1035 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "State_one.v", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "key_7seg.v", 0); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IO_deal.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("IO_deal.v", 348, 524); // ad (IO_deal.v)
+selectCodeEditor("IO_deal.v", 91, 500); // ad (IO_deal.v)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "State_one.v", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("State_one.v", 603, 374); // ad (State_one.v)
+typeControlKey((HResource) null, "State_one.v", 'c'); // ad (State_one.v)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "key_7seg.v", 0); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IO_deal.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("IO_deal.v", 262, 495); // ad (IO_deal.v)
+typeControlKey((HResource) null, "IO_deal.v", 'v'); // ad (IO_deal.v)
+selectCodeEditor("IO_deal.v", 258, 495); // ad (IO_deal.v)
+selectCodeEditor("IO_deal.v", 269, 496); // ad (IO_deal.v)
+selectCodeEditor("IO_deal.v", 284, 500); // ad (IO_deal.v)
+selectCodeEditor("IO_deal.v", 295, 498); // ad (IO_deal.v)
+selectCodeEditor("IO_deal.v", 250, 495); // ad (IO_deal.v)
+typeControlKey((HResource) null, "IO_deal.v", 'c'); // ad (IO_deal.v)
+selectCodeEditor("IO_deal.v", 381, 491); // ad (IO_deal.v)
+typeControlKey((HResource) null, "IO_deal.v", 'v'); // ad (IO_deal.v)
+selectCodeEditor("IO_deal.v", 315, 526); // ad (IO_deal.v)
+selectCodeEditor("IO_deal.v", 430, 528); // ad (IO_deal.v)
+selectCodeEditor("IO_deal.v", 430, 524); // ad (IO_deal.v)
+typeControlKey((HResource) null, "IO_deal.v", 'v'); // ad (IO_deal.v)
+selectCodeEditor("IO_deal.v", 397, 556, false, true, false, false, false); // ad (IO_deal.v) - Control Key
+selectCodeEditor("IO_deal.v", 446, 522); // ad (IO_deal.v)
+selectCodeEditor("IO_deal.v", 447, 521, false, false, false, false, true); // ad (IO_deal.v) - Double Click
+selectCodeEditor("IO_deal.v", 504, 526); // ad (IO_deal.v)
+selectCodeEditor("IO_deal.v", 446, 526); // ad (IO_deal.v)
+typeControlKey((HResource) null, "IO_deal.v", 'v'); // ad (IO_deal.v)
+selectCodeEditor("IO_deal.v", 646, 496); // ad (IO_deal.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 28m:14s
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "State_one.v", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+// Elapsed Time for: 'L.f': 28m:17s
+selectCodeEditor("State_one.v", 390, 345); // ad (State_one.v)
+selectCodeEditor("State_one.v", 131, 220); // ad (State_one.v)
+selectCodeEditor("State_one.v", 133, 260); // ad (State_one.v)
+selectCodeEditor("State_one.v", 119, 582); // ad (State_one.v)
+selectCodeEditor("State_one.v", 164, 618); // ad (State_one.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 28m:26s
+// Elapsed Time for: 'L.f': 28m:28s
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file Z:/FPGA/Railway_System/Railway_System_V2/hx75_key_7seg.srcs/utils_1/imports/synth_1/hx75_hex_7seg.dcp with file Z:/FPGA/Railway_System/Railway_System_V2/hx75_key_7seg.runs/synth_1/top_design.dcp 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 16 
+// Tcl Message: [Tue Sep 10 17:18:26 2024] Launched synth_1... Run output will be captured here: Z:/FPGA/Railway_System/Railway_System_V2/hx75_key_7seg.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bq (Starting Design Runs Progress)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 87 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 18, false); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 16 
+// Tcl Message: [Tue Sep 10 17:19:53 2024] Launched impl_1... Run output will be captured here: Z:/FPGA/Railway_System/Railway_System_V2/hx75_key_7seg.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bq (Starting Design Runs Progress)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 71 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 21, false); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 16 
+// Tcl Message: [Tue Sep 10 17:21:05 2024] Launched impl_1... Run output will be captured here: Z:/FPGA/Railway_System/Railway_System_V2/hx75_key_7seg.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 68 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 24, false); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a75t_0"); // ao (xc7a75t_0)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl (Dont Echo) Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (PAResourceOtoP.ProgramFpgaDialog_PROGRAM, RDIResource.BaseDialog_OK)
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // aP (dialog3)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a75t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a75t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {Z:/FPGA/Railway_System/Railway_System_V2/hx75_key_7seg.runs/impl_1/top_design.bit} [get_hw_devices xc7a75t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a75t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a75t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'D' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bq (Program Device Progress)
+// Elapsed time: 36 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IO_deal.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("IO_deal.v", 413, 535); // ad (IO_deal.v)
+// Elapsed time: 26 seconds
+selectCodeEditor("IO_deal.v", 240, 445); // ad (IO_deal.v)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hx75_hex_7seg.v", 4); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 20 seconds
+selectCodeEditor("hx75_hex_7seg.v", 234, 195); // ad (hx75_hex_7seg.v)
+typeControlKey((HResource) null, "hx75_hex_7seg.v", 'c'); // ad (hx75_hex_7seg.v)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "key_7seg.v", 0); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hx75_hex_7seg.v", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "State_one.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("State_one.v", 260, 87); // ad (State_one.v)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "recharge_money"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IO_deal.v", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("IO_deal.v", 350, 115); // ad (IO_deal.v)
+selectCodeEditor("IO_deal.v", 330, 174); // ad (IO_deal.v)
+// Elapsed time: 11 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "recharge_money"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+selectCodeEditor("IO_deal.v", 185, 19); // ad (IO_deal.v)
+selectCodeEditor("IO_deal.v", 180, 1); // ad (IO_deal.v)
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "key_7seg.v", 0); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("key_7seg.v", 184, 454); // ad (key_7seg.v)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IO_deal.v", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("IO_deal.v", 299, 377); // ad (IO_deal.v)
+selectCodeEditor("IO_deal.v", 323, 346); // ad (IO_deal.v)
+selectCodeEditor("IO_deal.v", 196, 424); // ad (IO_deal.v)
+selectCodeEditor("IO_deal.v", 301, 301); // ad (IO_deal.v)
+selectCodeEditor("IO_deal.v", 313, 293); // ad (IO_deal.v)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "key_7seg.v", 0); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("key_7seg.v", 209, 503); // ad (key_7seg.v)
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "State_one.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "key_7seg.v", 0); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hx75_hex_7seg.v", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "State_one.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hx75_hex_7seg.v", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("hx75_hex_7seg.v", 297, 201); // ad (hx75_hex_7seg.v)
+selectCodeEditor("hx75_hex_7seg.v", 235, 438); // ad (hx75_hex_7seg.v)
+selectCodeEditor("hx75_hex_7seg.v", 207, 291); // ad (hx75_hex_7seg.v)
+selectCodeEditor("hx75_hex_7seg.v", 239, 294); // ad (hx75_hex_7seg.v)
+selectCodeEditor("hx75_hex_7seg.v", 253, 339); // ad (hx75_hex_7seg.v)
+// Elapsed time: 13 seconds
+selectCodeEditor("hx75_hex_7seg.v", 242, 265); // ad (hx75_hex_7seg.v)
+// Elapsed time: 26 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IO_deal.v", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("IO_deal.v", 250, 251); // ad (IO_deal.v)
+typeControlKey((HResource) null, "IO_deal.v", 'c'); // ad (IO_deal.v)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hx75_hex_7seg.v", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("hx75_hex_7seg.v", 715, 491); // ad (hx75_hex_7seg.v)
+typeControlKey((HResource) null, "hx75_hex_7seg.v", 'v'); // ad (hx75_hex_7seg.v)
+selectCodeEditor("hx75_hex_7seg.v", 713, 524); // ad (hx75_hex_7seg.v)
+selectCodeEditor("hx75_hex_7seg.v", 964, 536); // ad (hx75_hex_7seg.v)
+selectCodeEditor("hx75_hex_7seg.v", 718, 528); // ad (hx75_hex_7seg.v)
+typeControlKey((HResource) null, "hx75_hex_7seg.v", 'v'); // ad (hx75_hex_7seg.v)
+selectCodeEditor("hx75_hex_7seg.v", 713, 493); // ad (hx75_hex_7seg.v)
+selectCodeEditor("hx75_hex_7seg.v", 716, 524); // ad (hx75_hex_7seg.v)
+selectCodeEditor("hx75_hex_7seg.v", 555, 235); // ad (hx75_hex_7seg.v)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "switch.v", 4); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("switch.v", 443, 376); // ad (switch.v)
+selectCodeEditor("switch.v", 351, 524); // ad (switch.v)
+selectCodeEditor("switch.v", 243, 526); // ad (switch.v)
+selectCodeEditor("switch.v", 411, 517); // ad (switch.v)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IO_deal.v", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "switch.v", 4); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IO_deal.v", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "State_one.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hx75_hex_7seg.v", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "State_one.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IO_deal.v", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "State_one.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IO_deal.v", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hx75_hex_7seg.v", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "switch.v", 4); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_design (key_7seg.v), U6 : State_one (State_one.v)]", 7, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_design (key_7seg.v), U6 : State_one (State_one.v)]", 7, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectCodeEditor("State_one.v", 208, 567); // ad (State_one.v)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_design (key_7seg.v)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_design (key_7seg.v)]", 1, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectCodeEditor("key_7seg.v", 177, 371); // ad (key_7seg.v)
+selectCodeEditor("key_7seg.v", 169, 373); // ad (key_7seg.v)
+selectCodeEditor("key_7seg.v", 171, 439); // ad (key_7seg.v)
+selectCodeEditor("key_7seg.v", 169, 494); // ad (key_7seg.v)
+selectCodeEditor("key_7seg.v", 169, 556); // ad (key_7seg.v)
+selectCodeEditor("key_7seg.v", 171, 643); // ad (key_7seg.v)
+selectCodeEditor("key_7seg.v", 184, 644); // ad (key_7seg.v)
+selectCodeEditor("key_7seg.v", 187, 674); // ad (key_7seg.v)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "State_one.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "key_7seg.v", 0); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("key_7seg.v", 224, 653); // ad (key_7seg.v)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "State_one.v", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "switch.v", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("switch.v", 265, 438); // ad (switch.v)
+selectCodeEditor("switch.v", 361, 436); // ad (switch.v)
+selectCodeEditor("switch.v", 427, 441); // ad (switch.v)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "State_one.v", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "key_7seg.v", 0); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IO_deal.v", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 10 seconds
+selectCodeEditor("IO_deal.v", 254, 385); // ad (IO_deal.v)
+selectCodeEditor("IO_deal.v", 273, 516); // ad (IO_deal.v)
+selectCodeEditor("IO_deal.v", 259, 503); // ad (IO_deal.v)
+selectCodeEditor("IO_deal.v", 251, 345); // ad (IO_deal.v)
+// Elapsed time: 10 seconds
+selectCodeEditor("IO_deal.v", 637, 354); // ad (IO_deal.v)
+selectCodeEditor("IO_deal.v", 335, 531); // ad (IO_deal.v)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "State_one.v", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IO_deal.v", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("IO_deal.v", 631, 69); // ad (IO_deal.v)
+selectCodeEditor("IO_deal.v", 401, 475); // ad (IO_deal.v)
+selectCodeEditor("IO_deal.v", 530, 552); // ad (IO_deal.v)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "State_one.v", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("State_one.v", 166, 349); // ad (State_one.v)
+selectCodeEditor("State_one.v", 181, 309); // ad (State_one.v)
+selectCodeEditor("State_one.v", 77, 452); // ad (State_one.v)
+// Elapsed time: 13 seconds
+selectCodeEditor("State_one.v", 283, 481); // ad (State_one.v)
+typeControlKey((HResource) null, "State_one.v", 'v'); // ad (State_one.v)
+selectCodeEditor("State_one.v", 49, 530); // ad (State_one.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 40m:53s
+// Elapsed Time for: 'L.f': 40m:55s
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IO_deal.v", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("IO_deal.v", 664, 459); // ad (IO_deal.v)
+selectCodeEditor("IO_deal.v", 45, 550); // ad (IO_deal.v)
+selectCodeEditor("IO_deal.v", 411, 563); // ad (IO_deal.v)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "key_7seg.v", 0); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("key_7seg.v", 413, 468); // ad (key_7seg.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("key_7seg.v", 671, 461); // ad (key_7seg.v)
+// Elapsed Time for: 'L.f': 41m:27s
+// Elapsed Time for: 'L.f': 41m:29s
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (PAResourceQtoS.SaveProjectUtils_SAVE)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // W.d (dialog4)
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file Z:/FPGA/Railway_System/Railway_System_V2/hx75_key_7seg.srcs/utils_1/imports/synth_1/hx75_hex_7seg.dcp with file Z:/FPGA/Railway_System/Railway_System_V2/hx75_key_7seg.runs/synth_1/top_design.dcp 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs synth_1 -jobs 16 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Sep 10 17:31:33 2024] Launched synth_1... Run output will be captured here: Z:/FPGA/Railway_System/Railway_System_V2/hx75_key_7seg.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bq (Starting Design Runs Progress)
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed Time for: 'L.f': 41m:37s
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed Time for: 'L.f': 41m:39s
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 103 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 18, false); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 16 
+// Tcl Message: [Tue Sep 10 17:33:16 2024] Launched impl_1... Run output will be captured here: Z:/FPGA/Railway_System/Railway_System_V2/hx75_key_7seg.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bq (Starting Design Runs Progress)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 58 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 21, false); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 16 
+// Tcl Message: [Tue Sep 10 17:34:15 2024] Launched impl_1... Run output will be captured here: Z:/FPGA/Railway_System/Railway_System_V2/hx75_key_7seg.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 51 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 23, false); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 24, false); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a75t_0"); // ao (xc7a75t_0)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl (Dont Echo) Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (PAResourceOtoP.ProgramFpgaDialog_PROGRAM, RDIResource.BaseDialog_OK)
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // aP (dialog5)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a75t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a75t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {Z:/FPGA/Railway_System/Railway_System_V2/hx75_key_7seg.runs/impl_1/top_design.bit} [get_hw_devices xc7a75t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a75t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a75t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'D' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bq (Program Device Progress)
+// Elapsed time: 117 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IO_deal.v", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "State_one.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hx75_hex_7seg.v", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "State_one.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hx75_hex_7seg.v", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 54m:05s
+// Elapsed Time for: 'L.f': 54m:07s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 54m:33s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 54m:35s
+// Elapsed Time for: 'L.f': 54m:37s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 54m:49s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 54m:51s
+// Elapsed Time for: 'L.f': 54m:53s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 54m:57s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 54m:59s
+// Elapsed Time for: 'L.f': 55m:01s
+// Elapsed Time for: 'L.f': 55m:03s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 55m:17s
+// Elapsed Time for: 'L.f': 55m:19s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 56m:14s
+// Elapsed Time for: 'L.f': 56m:16s
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error ERROR: [Common 17-180] Spawn failed: No error 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 56m:18s
+// Elapsed Time for: 'L.f': 56m:20s
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,427 MB. GUI used memory: 121 MB. Current time: 9/10/24, 5:46:37 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 56m:50s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 56m:52s
+// Elapsed Time for: 'L.f': 56m:54s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 56m:56s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 56m:58s
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+// Elapsed Time for: 'L.f': 57m:00s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 57m:10s
+// Elapsed Time for: 'L.f': 57m:12s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 57m:14s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 57m:16s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 57m:18s
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 57m:20s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 57m:22s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 57m:24s
+// Elapsed Time for: 'L.f': 57m:26s
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 57m:38s
+// Elapsed Time for: 'L.f': 57m:40s
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 57m:42s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 57m:44s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 57m:46s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 57m:48s
+// Elapsed Time for: 'L.f': 57m:50s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 57m:52s
+// Elapsed Time for: 'L.f': 57m:54s
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 57m:56s
+// Elapsed Time for: 'L.f': 57m:58s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 58m:02s
+// Elapsed Time for: 'L.f': 58m:04s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 58m:08s
+// Elapsed Time for: 'L.f': 58m:10s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 58m:18s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 58m:20s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 58m:22s
+// Elapsed Time for: 'L.f': 58m:24s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 58m:28s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 58m:30s
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 58m:32s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 58m:34s
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+// Elapsed Time for: 'L.f': 58m:36s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 58m:40s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 58m:42s
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+// Elapsed Time for: 'L.f': 58m:45s
+// Elapsed Time for: 'L.f': 58m:46s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 58m:48s
+// Elapsed Time for: 'L.f': 58m:50s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 58m:52s
+// Elapsed Time for: 'L.f': 58m:54s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE

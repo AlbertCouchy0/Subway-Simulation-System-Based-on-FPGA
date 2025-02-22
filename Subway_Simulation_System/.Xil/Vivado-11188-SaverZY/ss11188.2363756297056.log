@@ -1,0 +1,10 @@
+srcscan starts
+INFO: analyzing module IO_deal (VERI-9002)
+INFO: analyzing module Select (VERI-9002)
+INFO: analyzing module num2seg (VERI-9002)
+INFO: analyzing module button (VERI-9002)
+INFO: analyzing module seg_dtxs (VERI-9002)
+INFO: analyzing module key44 (VERI-9002)
+INFO: analyzing module switch (VERI-9002)
+INFO: analyzing module top_design (VERI-9002)
+srcscan exits with return value 0
