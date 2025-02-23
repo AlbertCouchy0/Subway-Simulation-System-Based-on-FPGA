@@ -1,4 +1,4 @@
-# Subway-Simulation-System-Based-on-FPGA
+# Subway Simulation System Based on FPGA
 
 ## Project Description
 
