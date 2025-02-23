@@ -15,8 +15,8 @@ The system is divided into several key modules:
 
 ## Running Steps
 
-1. After downloading the program, extract it to the same directory, open the **Subway_Simulation_System** folder, and run the `hx75_key_7seg.xpr` project file with Vivado version 2023.2 or higher.<br>
-2. After connecting the system hardware according to the schematic in the report, simulate the project in Vivado, then burn it to the FPGA board. The board used in this project is the HX7A75A development board provided by the school.<br>
-3. Open OpenMV IDE and burn the file `openmv.py` to the OpenMV.<br>
-4. Open Arduino IDE and burn the `Arduino.ino` to the Arduino UNO development board.<br>
+1. After downloading the program, extract it to the same directory, open the **Subway_Simulation_System** folder, and run the `hx75_key_7seg.xpr` project file with Vivado version 2023.2 or higher.
+2. After connecting the system hardware according to the schematic in the report, simulate the project in Vivado, then burn it to the FPGA board. The board used in this project is the HX7A75A development board provided by the school.
+3. Open OpenMV IDE and burn the file `openmv.py` to the OpenMV.
+4. Open Arduino IDE and burn the `Arduino.ino` to the Arduino UNO development board.
 5. In OpenMV, adjust the parameters according to the lighting conditions on-site.
