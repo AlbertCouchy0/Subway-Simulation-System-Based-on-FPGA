@@ -9,7 +9,7 @@ The system is divided into several key modules:
    - **Display Module**: Implements dynamic display of transaction information on LED screens, including station names, ticket prices, and change amounts.
    - **Input Module**: Integrates a matrix keyboard for user inputs and simulates coin and banknote insertion.
    - **State Control Module**: Manages the overall workflow of the system, including user interactions, transaction processing, and error handling.
-   - 
+
 <br>More specific information can be found in the report.
 
 
