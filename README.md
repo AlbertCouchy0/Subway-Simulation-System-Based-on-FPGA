@@ -3,17 +3,15 @@
 ## Project Description
 
 This project is a digital system course design project from the second-year summer school of the School of Information at Southeast University. It aims to design and implement a subway ticketing simulation system, combining hardware logic design and software programming to simulate the core functions of a subway ticket vending machine. The system adopts a modular design approach and includes functional modules such as coin and banknote recognition, fare calculation, display control, input processing, and state control. It can realize automatic ticket sales, manual fare input, real-time transaction display, and change dispensing functions.    
-Modular Design: The system is divided into several key modules:
+The system is divided into several key modules:
    - **Coin and Banknote Recognition Module**: Utilizes image recognition technology to identify banknotes and simulate coin inputs.
    - **Fare Calculation Module**: Calculates ticket prices based on the distance between subway stations, using predefined fare policies.
    - **Display Module**: Implements dynamic display of transaction information on LED screens, including station names, ticket prices, and change amounts.
    - **Input Module**: Integrates a matrix keyboard for user inputs and simulates coin and banknote insertion.
    - **State Control Module**: Manages the overall workflow of the system, including user interactions, transaction processing, and error handling.
-<br>
+   - 
+<br>More specific information can be found in the report.
 
-More specific information can be found in the report.
-
----
 
 ## Running Steps
 
